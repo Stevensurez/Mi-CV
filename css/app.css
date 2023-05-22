@@ -1,0 +1,310 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+/* Globales */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+h1 {
+    font-size: 7rem;
+}
+h2 {
+    font-size: 5rem;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+    display: flex;
+}
+ul {
+    list-style: none;
+}
+p {
+    text-align: justify;
+}
+
+.btn {
+    background-color: #8cbc00;
+    display: flex;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+    text-align: start;
+    border: none;
+    
+}
+.btn:hover {
+    background-color: #769c02;
+    cursor: pointer;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;  
+}
+
+.img-perfil {
+    margin-top: 3rem;
+}
+
+/* Utilidades */
+.profile-description {
+    text-align: justify;
+}
+
+/* Header y Navegacion */
+.nombre-sitio {
+    margin: .5rem;
+    text-align: center;
+}
+.nombre-sitio span {
+    color: #037bc0;
+}
+
+.contenido-principal h2, p{
+    margin: 2rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skills li
+{
+    width: 160px;
+    height: auto;
+}
+
+.datos-interes h2 {
+    margin-bottom: 0;
+    text-align:center;
+}
+
+.listado-interes ul {
+margin-top: 0;
+padding:0;
+
+}
+
+.skills a {
+    justify-content: center;
+}
+
+footer p{
+text-align: center;
+}
+
+main {
+    margin: 2rem;
+}
+.sobre-mi {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+   
+}
+.sobre-mi p {
+    width: 50%;
+    height: auto;
+}
+
+main h2 {
+    text-align: center;
+}
+.imagenes-center {
+    width: 70rem;
+    height: auto;
+}
+
+.tamaño {
+    font-size:x-large;
+}
+
+.color-letra {
+    color: rgb(5, 96, 96);
+}
+
+.viajes-sur {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; 
+}
+
+.viajes-sur img {
+    height: 30rem;
+    width: 350rem;
+    object-fit: fill;
+}
+
+.viajes-sur h3 {
+    text-align: center;
+}
+
+.container-img {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;  
+}
+
+
+/* Listado de Productos */
+/*
+.contenido-principal {
+    padding-top: 5rem;
+}
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}/*
+.producto:nth-child(1){
+    /*grid-column: 1 / 7 ;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.producto:nth-child(1) img {
+    height: 52rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.producto:nth-child(2) img, 
+.producto:nth-child(3) img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+.producto {
+    background-color: #037bc0;
+}
+.text-producto {
+    text-align: center;
+    color: #ffffff;
+    padding: 2rem;
+}
+.text-producto h3 {
+margin: 0;
+}
+.text-producto p {
+    margin: 0 0 .5rem 0;
+}
+.text-producto .precio {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+/* Nosotros */
+/*
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax( 25rem, 1fr) );
+    column-gap: 4rem;
+}
+
+.informacion-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Blog */
+/*
+.contenedor-blog {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+
+.entrada {
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+    border: none;
+}
+
+.entrada-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada-meta p {
+    font-weight: 700;
+}
+
+.entrada-meta span {
+    color: #037bc0
+}
+
+.contenido-entrada-blog {
+    width: 60rem;
+    margin: 0 auto;
+}
+
+/* Galería */
+/*
+.galeria {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;   
+}
+
+.galeria img {
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+}
